@@ -1,0 +1,23 @@
+{% extends "Layout.html" %}
+{% block content %}
+<div class="main_container">
+    <div class="category_container">
+        <div class="category-text">
+            <div class="category-details">
+                <div>{{ name }} {{ price }}</div>
+                <div class="table_container">
+                    <table>
+                        <tr>
+                            <td>{{ name }}</td>
+                            <td> {{ price }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category_container"><div class="category-text">{{ name }} {{ price }}</div></div>
+    <div class="category_container"><div class="category-text">3</div></div>
+    <div class="category_container"><div class="category-text">4</div></div>
+</div>
+{% endblock %}
