@@ -1,6 +1,7 @@
 {% extends "Layout.html" %}
 {% block content %}
-<div class="main_container">
+
+<!-- <div class="main_container">
     <div class="category_container">
         <div class="category-text">
             <div class="category-details">
@@ -19,5 +20,16 @@
     <div class="category_container"><div class="category-text">{{ name }} {{ price }}</div></div>
     <div class="category_container"><div class="category-text">3</div></div>
     <div class="category_container"><div class="category-text">4</div></div>
+</div> -->
+
+<div class="logo">IsraKotz</div>
+<div class="home_page">
+    <input id="searchBox"
+            style="color:grey;" 
+            onblur="if(value ==''){value='Enter your destination';style='color:grey;'}"
+            onfocus="if(value ='Enter your destination'){value='';style='color:black;'}"
+            value="Enter your destination"/>
+    <button id="submit">Go</button>
 </div>
+
 {% endblock %}

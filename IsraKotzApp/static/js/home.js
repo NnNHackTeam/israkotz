@@ -1,9 +1,32 @@
 /**
  * Created by Nir on 10/17/13.
  */
+
+// $(document).ready(function() {
+// 	$(".category_container").click(function(){
+// 		if(!$(this).hasClass('opened')){
+// 			$(this).animate({height: "200px"});
+// 			$(".table_container", this).slideDown(200);
+// 			var obj = $(this).closest(".main_container").find(".opened");
+// 			if(obj != null){
+// 				$(".table_container", obj).slideUp(100);
+// 				obj.animate({height: "30px"});
+// 				obj.removeClass("opened");
+// 			}
+// 			$(this).addClass('opened');
+// 		}
+// 	});
+// });
+
 $(document).ready(function() {
-   $(".category_container").click(function(){
-       $(this).animate({height: "200px"});
-        $(".table_container", this).show();
-   });
+	$('#submit').click(function(){
+		var destination = $('#searchBox').value;
+		//window.location = "index.html?keyword=" + searchText;
+	});
+
+	$("#searchBox").keyup(function(event){
+		if(event.keyCode == 13){
+			$("#submit").click();
+		}
+	});
 });
