@@ -20,8 +20,18 @@
 
 $(document).ready(function() {
 	$('#submit').click(function(){
-		var destination = $('#searchBox').value;
-		//window.location = "index.html?keyword=" + searchText;
+		var destination = $('#searchBox').val();
+		var dictionary = {
+			"city": destination
+		}
+		$.ajax({
+			url: "/api/budget",
+			type: "POST",
+			data: dictionary,
+			success: function(data){
+				$('.content_wrapper').html(data);
+			}
+		});
 	});
 
 	$("#searchBox").keyup(function(event){
