@@ -5,7 +5,7 @@ import yql
 def getNumbeoData(country, city):
 
     #Define the URL to query in the Numbeo web page (by country and city)
-    URL = "http:x//www.numbeo.com/cost-of-living/city_result.jsp?country=" + country + "&city=" + city + "&displayCurrency=ILS"
+    URL = "http//www.numbeo.com/cost-of-living/city_result.jsp?country=" + country + "&city=" + city + "&displayCurrency=ILS"
 
     #Fix the + problem
     URL = URL.replace(' ', "+")
