@@ -1,3 +1,276 @@
 <!--Li and Nir need to implement-->
 
-hello
+<!-- <div class="topPart">
+    <a>IsraKotz</a>
+    <input id="searchBox2"
+        type = "text"
+        onblur="blurText(this)"
+        onfocus="focusText(this)"
+        value="City Selected"/>
+    <button id="submit2">Go</button>
+</div>
+
+<div class="main_container">
+    <div class="category_container">
+        <div class="category_text">500</div>
+        <div class="category_details">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </div>
+    <div class="category_container">
+        <div class="category_text">1000</div>
+        <div class="category_details">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </div>
+    <div class="category_container">
+        <div class="category_text">2000</div>
+        <div class="category_details">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </div>
+    <div class="category_container">
+        <div class="category_text custom_value">Custom</div>
+        <div class="category_details">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </div>
+</div> -->
+
+<script type="text/javascript">
+    function blurText(obj){
+        obj.style.color = "grey";
+        $('#submit2').addClass('hide');
+    }
+
+    function focusText(obj){
+        obj.style.color = "black";
+        $('#submit2').removeClass('hide');
+    }
+
+    $("#searchBox2").keyup(function(event){
+        var code = event.which;
+        if(code == 13){
+            document.getElementById("submit2").click();
+        }
+    });
+</script>
+
+<div class="topPart">
+    <a><img src="/css/logo.png"/></a>
+    <input id="searchBox2"
+        type = "text"
+        onblur="blurText(this)"
+        onfocus="focusText(this)"
+        value="City Selected"/>
+    <button id="submit2">Go</button>
+</div>
+
+<!-- <dl class="main_container">
+    <dt class="category_text">What are your hours?</dt>
+    <dd class="category_details">We are open 24/7.</dd>
+            <div>1</div>
+            <div>2</div>
+    <dt class="category_text">What are your hours?</dt>
+    <dd class="category_details">We are open 24/7.</dd>
+            <div>1</div>
+            <div>2</div>
+    <dt class="category_text">What are your hours?</dt>
+    <dd class="category_details">We are open 24/7.</dd>
+            <div>1</div>
+            <div>2</div>
+    <dt class="category_text">What are your hours?</dt>
+    <dd class="category_details">We are open 24/7.</dd>
+            <div>1</div>
+            <div>2</div>
+</dl> -->
+<div class="main_container">
+    <div class="category_container">
+        <div class="category_text">500</div>
+        <div class="category_details">
+            <div class="best" style="float: left; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+                
+            <div class="most" style="float: right; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="category_container">
+        <div class="category_text">1000</div>
+        <div class="category_details">
+            <div class="best" style="float: left; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+                
+            <div class="most" style="float: right; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="category_container">
+        <div class="category_text">2000</div>
+        <div class="category_details">
+            <div class="best" style="float: left; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+                
+            <div class="most" style="float: right; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="category_container">
+        <div class="category_text custom_value">Custom</div>
+        <div class="category_details">
+            <div class="best" style="float: left; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+                
+            <div class="most" style="float: right; width: 50%;">
+                <table>
+                    <tr>
+                        <td class="title">Name: </td>
+                        <td class="text">John Don</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Age: </td>
+                        <td class="text">23</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Gender: </td>
+                        <td class="text">Male</td>
+                    </tr>    
+                    <tr>
+                        <td class="title">Day of Birth:</td>
+                        <td class="text">12th May 1986</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
