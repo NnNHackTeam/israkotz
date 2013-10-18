@@ -25,7 +25,7 @@ class BudgetHandler(BaseHandler):
                 products["country"] = result.country
                 for product in product_prices:
                     price_value = getNumbeoData(result.country,city, product.code)
-                    ?calc = calc + float(price_value[0:-2])
+                    #calc = calc + float(price_value[0:-2])
                     products[product.name] = {"name":product.code,"price": price_value}
                 hotel_prices = getHotelData(result.country, city)
                 #calc = calc + float(hotel_prices["five_star"]["price"][0:-2])
