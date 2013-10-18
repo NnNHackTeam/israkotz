@@ -22,10 +22,10 @@
     <input id="searchBox2"
         type = "text"
         placeholder="Search another City"/>
-    <button id="submit2">Go</button>
+    <button class="btn-primary btn" id="submit2">Go</button>
 </div>
 <div id="city_name">
-    {{ product.city }}
+    {{ product.city }} , {{ product.country }}
 </div>
 <div class="main_container">
     <div class="category_container">
@@ -33,6 +33,7 @@
         <div class="category_details">
             <div class="best" style="float: left; width: 50%;">
                 <table class="best_table">
+                    <th>Best Quality</th>
                     <tr>
                         <td class="title">{{ product.jeans.name }}</td>
                         <td class="text">{{ product.jeans.price }}</td>
@@ -49,7 +50,20 @@
                         <td class="title">{{ product.taxi_for_one_km.name }}</td>
                         <td class="text">{{ product.taxi_for_one_km.price }}</td>
                     </tr>
+                    <tr>
+                        <td class="title">{{ product.hotels.four_star.name }}</td>
+                        <td class="text">{{ product.hotels.four_star.price }}</td>
+                    </tr>
+                    <tr>
+                        <td class="title">{{ product.hotels.five_star.name.name }}</td>
+                        <td class="text">{{ product.hotels.five_star.name.price }}</td>
+                    </tr>
                 </table>
+                {% if calc < 500 %}
+                    <img src="{{ STATIC_URL }}ok.png"/>
+                {% else %}
+                    <img src="{{ STATIC_URL }}bad.png"/>
+                {% endif %}
             </div>
                 
 {#            <div class="most" style="float: right; width: 50%;">#}

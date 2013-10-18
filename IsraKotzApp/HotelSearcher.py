@@ -25,6 +25,6 @@ def getHotelData(country, city):
     rows1 = result1.rows[0]
     rows2 = result2.rows[0]
 
-    dict = {"5 star": rows1, "4 star": rows2}
+    dict = {"five_star": {"name": "5 star hotel", "price": rows1}, "four_star": {"name": "4 star hotel", "price": rows2}}
     #return the only row.
     return dict
