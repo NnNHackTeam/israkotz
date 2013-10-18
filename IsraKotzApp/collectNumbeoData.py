@@ -3,7 +3,7 @@ __author__ = 'Nir'
 import yql
 
 
-def getNumbeoData(country, city):
+def getNumbeoData(country, city, product):
 
     #Define the URL to query in the Numbeo web page (by country and city)
     URL = "http://www.numbeo.com/cost-of-living/city_result.jsp?country=" + country + "&city=" + city + "&displayCurrency=ILS"
@@ -17,7 +17,7 @@ def getNumbeoData(country, city):
     #Define the SQL query that will be used in YQL. This will return us the price of 1 pair of Nike Shoes.
     #query = "select * from html where url='" + URL + "' and xpath='//p[text()=\"1 Pair of Nike Shoes\"]/../following-sibling::td[1]/p'"
 
-    query = "select * from html where url='" + URL + "' and xpath='//p[text()=\"1 Summer Dress in a Chain Store (Zara, H&M, ...)\"]/../following-sibling::td[1]/p'"
+    query = "select * from html where url='" + URL + "' and xpath='//p[text()=\"" + product + "\"]/../following-sibling::td[1]/p'"
 
 
     #Preform the query and return the results to the object result
