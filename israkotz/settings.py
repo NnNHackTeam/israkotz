@@ -108,8 +108,8 @@ ROOT_URLCONF = 'israkotz.urls'
 WSGI_APPLICATION = 'israkotz.wsgi.application'
 
 TEMPLATE_DIRS = (
-    #"D:/Programming/PycharmProjects/israkotz/templates"
-    "G:/Programming/Yahoo/templates"
+    "D:/Programming/PycharmProjects/israkotz/templates"
+    #"G:/Programming/Yahoo/templates"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

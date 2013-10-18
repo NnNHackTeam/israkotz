@@ -3,7 +3,12 @@
   <component name="DataSourceManagerImpl" format="xml" hash="1640385004">
     <data-source source="LOCAL" name="Django default" uuid="07d611b6-eb9f-4beb-a946-949b5dc5d607">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Documents and Settings\Isaac Levanon\PycharmProjects\israkotz\israkotz_db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Programming\PycharmProjects\israkotz\israkotz_db</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="54acae5a-ebf0-4b36-9ae5-b9a2893f5f90">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Programming\PycharmProjects\israkotz\israkotz_db</jdbc-url>
       <libraries />
     </data-source>
   </component>
